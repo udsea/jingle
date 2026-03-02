@@ -58,3 +58,5 @@ data/**
 # results/
 # artifacts/
 # outputs/
+
+/htmlcov

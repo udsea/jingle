@@ -1,4 +1,4 @@
-.PHONY: help venv install download prepare split windows train eval clean
+.PHONY: help venv install download prepare split windows train eval clean coverage
 
 PY := python
 UV := uv
@@ -37,6 +37,9 @@ eval:
 
 clean:
 	rm -rf data/processed results .pytest_cache
+
+coverage:
+	uv run pytest --cov=src/genomebench --cov-report=term-missing --cov-report=html
 
 .PHONY: fmt lint typecheck test check
 

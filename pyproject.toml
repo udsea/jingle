@@ -13,6 +13,7 @@ dev = [
     "mypy>=1.8.0",
     # optional:
     "pre-commit>=3.6.0",
+    "pytest-cov>=7.0.0",
 ]
 
 [tool.ruff]
